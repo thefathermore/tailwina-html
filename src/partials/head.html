@@ -1,0 +1,26 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Tailwina - a modern HTML starter template with Tailwind CSS and Vite"
+  />
+  <meta name="author" content="" />
+  <meta name="robots" content="index, follow" />
+  {{> favicon-meta }}
+
+  <!-- Page Title. It is passed in as the title prop when you call the partial -->
+  <title>{{#if title}}{{ title }}{{else}}Tailwina{{/if}}</title>
+
+  <!-- Custom Font. Update/remove this if you want to use a different font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href='{{resolve-from-root "../styles/main.css"}}' />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/custom.css" />
+</head>

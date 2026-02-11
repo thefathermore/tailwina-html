@@ -1,0 +1,16 @@
+<nav class="hidden md:flex items-center space-x-6" aria-label="Primary navigation">
+  <ul class="flex items-center space-x-6">
+    {{#each @root.menu}}
+    <li>
+      <a
+        href="{{ url }}"
+        class="text-black hover:text-gray-700 {{#if (eq ../currentPageUrl url)}}text-black font-semibold{{/if}}"
+        {{#if (eq ../currentPageUrl url)}}aria-current="page"{{/if}}
+        aria-label="{{ label }}"
+      >
+        {{ label }}
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+</nav>

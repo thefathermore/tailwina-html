@@ -1,0 +1,32 @@
+{
+  "icon": {
+    "desktop": {
+      "regularIconTransformation": {
+        "type": "none"
+      },
+      "darkIconType": "none"
+    },
+    "touch": {
+      "transformation": {
+        "type": "background",
+        "backgroundColor": "#ffffff",
+        "backgroundRadius": 0,
+        "imageScale": 0.7
+      },
+      "appTitle": "Bricknet"
+    },
+    "webAppManifest": {
+      "transformation": {
+        "type": "background",
+        "backgroundColor": "#ffffff",
+        "backgroundRadius": 0,
+        "imageScale": 0.6
+      },
+      "backgroundColor": "#ffffff",
+      "name": "Bricknet",
+      "shortName": "Bricknet",
+      "themeColor": "#ffffff"
+    }
+  },
+  "path": "/"
+}

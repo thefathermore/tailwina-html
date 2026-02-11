@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Company",
+    "footerMenu": [
+      {
+        "label": "About",
+        "url": "/about.html"
+      },
+      {
+        "label": "Contact",
+        "url": "/contact.html"
+      }
+    ]
+  },
+  {
+    "title": "Resources",
+    "footerMenu": [
+      {
+        "label": "Documentation",
+        "url": "#"
+      },
+      {
+        "label": "Support",
+        "url": "#"
+      }
+    ]
+  }
+]

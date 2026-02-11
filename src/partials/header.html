@@ -1,0 +1,46 @@
+<header
+  id="header"
+  class="sticky top-0 z-50 bg-white shadow-sm"
+  aria-label="Site header"
+>
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+      <a
+        href="/index.html"
+        class="text-xl font-bold text-black"
+        aria-label="Return to homepage"
+      >
+        Tailwina
+      </a>
+      <!-- Desktop Navigation - hidden on mobile -->
+      <div class="hidden md:block">
+        {{> navigation currentPageUrl=currentPageUrl }}
+      </div>
+      <!-- Mobile Menu Button - only visible on mobile -->
+      <button
+        id="btn-toggle-menu-mobile"
+        type="button"
+        class="md:hidden p-2 text-black hover:text-gray-700 transition-colors"
+        aria-label="Open mobile menu"
+        aria-expanded="false"
+        aria-controls="header-mobile"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+{{> header-mobile currentPageUrl=currentPageUrl }}

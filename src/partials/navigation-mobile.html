@@ -1,0 +1,16 @@
+<nav class="flex flex-col space-y-4" aria-label="Mobile navigation">
+  <ul class="flex flex-col space-y-4">
+    {{#each @root.menu}}
+    <li>
+      <a
+        href="{{ url }}"
+        class="text-black hover:text-gray-700 text-lg {{#if (eq ../currentPageUrl url)}}text-black font-semibold{{/if}}"
+        {{#if (eq ../currentPageUrl url)}}aria-current="page"{{/if}}
+        aria-label="{{ label }}"
+      >
+        {{ label }}
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+</nav>

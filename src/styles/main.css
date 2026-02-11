@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+/* This makes sure Tailwind picks up additional classes */
+@source "../pages";
+@source "../partials";
+@source "../data";
+@source "../js";
+
+/* Go here to tweak your Tailwind config */
+@import './tailwind-config';
+
+/* Packages */
+/* @import 'toastify-js/src/toastify.css'; */
+
+/* Components */
+@import './style';
+
+/* Override Packages Style */
+/* @import './toastify'; */

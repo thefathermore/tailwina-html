@@ -1,0 +1,76 @@
+/* default border color */
+/* @layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+} */
+
+/* customise container utility */
+/* @utility container {
+  margin-inline: auto;
+  @apply ps-4 pe-4 sm:ps-6 sm:pe-6 md:ps-8 md:pe-8;
+} */
+
+/* You may want to tweak this, this gives top and bottom padding to each section container */
+/* .container:not(header .container) {
+  @apply py-24; */
+/* } */
+
+@theme {
+  /* how to customise default font stack */
+  --font-sans: 'Inter', sans-serif;
+
+  /* Primary color: Black */
+  --color-primary: #000000;
+  --color-primary-dark: #111111;
+  --color-primary-light: #1a1a1a;
+
+  /* Secondary color: White Creme */
+  --color-secondary: #faf9f6;
+  --color-secondary-light: #ffffff;
+  --color-secondary-dark: #f5f3f0;
+
+  /* Base colors */
+  --color-base-white: #ffffff;
+  --color-base-creme: #faf9f6;
+  --color-base-black: #000000;
+  --color-base-grey-stroke: #e5e5e5;
+  --color-base-grey: #666666;
+
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.5rem;
+  --text-4xl: 3.5rem;
+  --text-5xl: 5rem;
+}
+
+/* dark mode styling example - uncomment if you want to use dark mode */
+/* @media (prefers-color-scheme: dark) {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-800, currentColor);
+  }
+} */
+
+/* example of how to customise the typography plugin settings */
+/* .prose-gray {
+  --tw-prose-headings: var(--color-white);
+  --tw-prose-body: var(--color-body);
+
+  h1 {
+    @apply text-7xl lg:text-8xl mb-0;
+  }
+
+  h2 {
+    @apply text-6xl m-0;
+  }
+} */

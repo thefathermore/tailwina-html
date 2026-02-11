@@ -1,0 +1,23 @@
+<picture class="{{pictureClass}}">
+  <source
+    srcset="{{webp1x}} 1x, {{webp2x}} 2x, {{webp3x}} 3x"
+    type="image/webp"
+  />
+  {{!-- <source
+    srcset="{{fallback1x}} 1x, {{fallback2x}} 2x, {{fallback3x}} 3x"
+    type="image/jpeg"
+  /> --}}
+  <img
+    {{#if id }}
+    id="{{id}}"
+    {{/if}}
+    class="h-full w-full {{imgClass}}"
+    src="{{webp1x}}"
+    width="{{imgWidth}}"
+    height="{{imgHeight}}"
+    alt="{{imgAlt}}"
+    {{#if isLazy }}
+    loading="lazy"
+    {{/if}}
+  />
+</picture>

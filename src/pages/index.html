@@ -1,0 +1,94 @@
+{{#> layout-default title="Home" currentPageUrl="index.html" }}
+<main class="min-h-screen">
+  <!-- Hero Section -->
+  <section class="bg-linear-to-br from-white to-gray-50 py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h1 class="text-3xl md:text-4xl font-bold text-black mb-6">
+          A Private Life is a Happy Life
+        </h1>
+        <p class="text-xl text-gray-700 mb-8">
+          A modern HTML starter template with Tailwind CSS, Vite, and Handlebars
+        </p>
+        <div class="flex gap-4 justify-center">
+          <a
+            href="/about.html"
+            class="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors"
+          >
+            Learn More
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-white text-black px-6 py-3 rounded-lg border-2 border-black hover:bg-gray-50 transition-colors"
+          >
+            View on GitHub
+          </a>
+        </div>
+      </div>
+      <!-- Example: Using image partial -->
+      <div class="max-w-2xl mx-auto">
+        {{> image webp1x="/images/hero@1x.webp" webp2x="/images/hero@2x.webp"
+        webp3x="/images/hero@3x.webp" imgWidth="1302" imgHeight="1080"
+        imgAlt="Hero image" pictureClass="rounded-lg shadow-lg overflow-hidden"
+        imgClass="object-cover w-full h-auto" }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-black mb-4">Features</h2>
+        <p class="text-lg text-gray-700">
+          Everything you need to build modern websites
+        </p>
+      </div>
+      <!-- Example: Using data from JSON files -->
+      <div class="grid md:grid-cols-3 gap-8">
+        {{#each @root.features}}
+        <div class="p-6 rounded-lg border border-gray-200 bg-white">
+          <div
+            class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="{{ icon }}"
+              />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-black mb-2">{{ title }}</h3>
+          <p class="text-gray-700">{{ description }}</p>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-black py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-white mb-4">Ready to get started?</h2>
+      <p class="text-xl text-gray-300 mb-8">
+        Clone this template and start building your next project
+      </p>
+      <a
+        href="/about.html"
+        class="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors inline-block"
+      >
+        Learn More
+      </a>
+    </div>
+  </section>
+</main>
+{{/layout-default}}
