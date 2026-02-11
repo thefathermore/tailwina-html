@@ -14,18 +14,21 @@ Tailwina is a modern, clean HTML starter template built with **Tailwind CSS v4**
 
 ## 📦 Installation
 
-### Prerequisites
+### Quick Start (Recommended)
 
-- [Node.js](https://nodejs.org/) (v20 or higher)
-- [pnpm](https://pnpm.io/) (**recommended**) or [yarn](https://yarnpkg.com/)
+The easiest way to start a new project is by using the CLI tool:
 
-### Getting Started
+```bash
+npx create-tailwina-html@latest
+```
+
+### Manual Installation
 
 1. **Clone the repository**
 
    ```bash
-   git clone <your-repo-url>
-   cd tailwina
+   git clone https://github.com/thefathermore/tailwina-html.git
+   cd tailwina-html
    ```
 
 2. **Install dependencies**
